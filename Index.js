@@ -16,7 +16,10 @@ while (true) {
         else if (clientNumber == anyNumber) {
             alert("Ура вы угадали!!!!!")
         } 
-        else {
-            alert("Вы не угадали(((")
-        }
+        else if (clientNumber > anyNumber) {
+            alert("Увы....загаданное число было меньше")
+        } 
+        else if (clientNumber < anyNumber) {
+            alert("Увы....загаданное число было больше")
+        } 
     }
